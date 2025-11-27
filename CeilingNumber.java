@@ -1,7 +1,5 @@
 //Ceiling = first number that is equal to or greater than the target.
 
-package JAVA_BASICS;
-
 public class CeilingNumber {
     public static void main(String[] args) {
         int[] arr = {1,2,5,9,14,16,18};
