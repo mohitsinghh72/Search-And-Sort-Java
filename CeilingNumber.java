@@ -1,9 +1,10 @@
-//Ceiling = first number that is equal to or greater than the target.
+
+// Ceiling Number = first number that is equal to or greater than the target.
 
 public class CeilingNumber {
     public static void main(String[] args) {
         int[] arr = {1,2,5,9,14,16,18};
-        int ans = ceiling2(arr,3);
+        int ans = ceiling2(arr,18);
         System.out.println(ans);
 
     }
@@ -24,6 +25,9 @@ public class CeilingNumber {
     // Binary Search
 
     public static int ceiling2(int[] arr,int target){
+        if(target > arr[arr.length-1]){
+            return -1;
+        }
         int start = 0;
         int last = arr.length-1;
 
